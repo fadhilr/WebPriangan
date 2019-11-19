@@ -311,7 +311,7 @@ class c_admin extends CI_Controller {
 	}
 	public function hapusProduk(){
 		$id= $this->input->post("id");
-		$this->m_admin->deleteGaleri($id);
+		$this->m_admin->deleteProduk($id);
 		echo "{}";
 	}
 

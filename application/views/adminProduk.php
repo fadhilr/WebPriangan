@@ -156,7 +156,7 @@ if($this->session->userdata('username')==null){
         <li class="">
           <a href="<?php echo base_url();?>c_admin/adminInstagram">
             <i class="fa fa-instagram"></i>
-            <span>Guide</span>
+            <span>Foto IG</span>
             <span class="pull-right-container">
               <!-- <span class="label label-primary pull-right">4</span> -->
             </span>
@@ -245,7 +245,7 @@ if($this->session->userdata('username')==null){
                       <a href="<?php echo base_url(); ?>c_admin/tampilanInfoProduk/<?php echo "$a[id]" ?>" type="button" class="btn btn-info btn-flat"><i class="fa fa-info"></i></a>
                       <a href="<?php echo base_url(); ?>c_admin/tampilanEditProduk/<?php echo "$a[id]" ?>" type="button" class="btn btn-warning btn-flat"><i class="fa fa-edit"></i></a>
             
-                     <button type="button" class="btn btn-danger btn-flat hapus-member" id="hapus" data-nama = "<?php echo "$a[id]"?>" data-id="<?php echo "$a[id]"?>" ><i class="fa fa-trash"></i></button>
+                     <button type="button" class="btn btn-danger btn-flat hapus-member" id="hapus" data-nama = "<?php echo "$a[keterangan]"?>" data-id="<?php echo "$a[id]"?>" ><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
                   

@@ -56,7 +56,7 @@ class m_admin extends CI_Model {
 		$query = $this->db->insert($table,$data);
 		return $query;
 	}
-	function set_galeri($data,$table){
+	function set_instagram($data,$table){
 		$query = $this->db->insert($table,$data);
 		return $query;
 	}

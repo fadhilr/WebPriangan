@@ -566,6 +566,13 @@ a.button-w3ls:hover {
     -o-background-size: cover;
     -moz-background-size: cover;
 }
+.banner-tes {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
 
 .banner-top2 {
     background: url(../images/2.jpg) no-repeat bottom;

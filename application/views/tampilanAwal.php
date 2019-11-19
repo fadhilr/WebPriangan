@@ -66,12 +66,7 @@
 					</div>
 					<div class="col-xl-5 col-md-7 top-social-agile text-md-right text-center pr-sm-0 mt-md-0 mt-2">
 						<div class="row middle-flex">
-							<div class="col-lg-5 col-4 top-w3layouts p-md-0 text-right">
-								<!-- login -->
-								<a href="login.html" class="btn login-button-2 text-uppercase text-wh">
-									<span class="fa fa-sign-in mr-2"></span>Login</a>
-								<!-- //login -->
-							</div>
+							
 							<div class="col-lg-7 col-8 social-grid-w3">
 								<!-- social icons -->
 								<ul class="top-right-info">
@@ -171,15 +166,17 @@
 					<input type="radio" name="slides" id="slides_2" />
 					<input type="radio" name="slides" id="slides_3" />
 					<ul class="banner_slide_bg">
+					<?php 
+						foreach($banner as $a){ 
+					?>
 						<li>
-							<div class="banner-top1"></div>
+							<div class="">
+							<img src="<?php echo base_url();?>/assets/images/foto/<?php echo "$a[fotoBanner]"?>" class="" alt="User Image" height="400px">
+							</div>
 						</li>
-						<li>
-							<div class="banner-top2"></div>
-						</li>
-						<li>
-							<div class="banner-top3"></div>
-						</li>
+					<?php 
+						} 
+					?>
 					</ul>
 					<div class="arrows">
 						<label for="slides_1"></label>
@@ -213,58 +210,27 @@
 			</div>
 			<div class="row">
 				<!-- blog grid -->
+				<?php 
+				foreach($instagram as $i){
+				?>
 				<div class="col-lg-4 col-md-6">
 					<div class="card border-0 med-blog">
 						<div class="card-header p-0">
 							<a href="menu.html">
-								<img class="card-img-bottom" src="<?php echo base_url();?>/assets/images/blog1.jpg" alt="Card image cap">
+								<img class="card-img-bottom" src="<?php echo base_url();?>/assets/images/foto/<?php echo "$i[fotoIg]" ?>" alt="Card image cap">
 							</a>
 						</div>
 						<div class="card-body border border-top-0">
-							<h5 class="blog-title card-title m-0"><a href="menu.html">French Burger</a></h5>
-							<p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-							<a href="menu.html" class="btn button-w3ls mt-4 mb-3">View More
-								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-							</a>
+							<h5 class="blog-title card-title m-0"><a href="menu.html"><?php echo "$i[namaIg]" ?></a></h5>
+							
 						</div>
 					</div>
 				</div>
+				<?php 
+				}
+				?>
 				<!-- //blog grid -->
-				<!-- blog grid -->
-				<div class="col-lg-4 col-md-6 mt-md-0 mt-5">
-					<div class="card border-0 med-blog">
-						<div class="card-header p-0">
-							<a href="menu.html">
-								<img class="card-img-bottom" src="<?php echo base_url();?>/assets/images/blog2.jpg" alt="Card image cap">
-							</a>
-						</div>
-						<div class="card-body border border-top-0">
-							<h5 class="blog-title card-title m-0"><a href="menu.html">Veg Muffin</a></h5>
-							<p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-							<a href="menu.html" class="button-w3ls active mt-4 mb-3">View More
-								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!-- //blog grid -->
-				<!-- blog grid -->
-				<div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
-					<div class="card border-0 med-blog">
-						<div class="card-header p-0">
-							<a href="menu.html">
-								<img class="card-img-bottom" src="<?php echo base_url();?>/assets/images/blog3.jpg" alt="Card image cap">
-							</a>
-						</div>
-						<div class="card-body border border-top-0">
-							<h5 class="blog-title card-title m-0"><a href="menu.html">Hashbrown Brioche</a></h5>
-							<p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-							<a href="menu.html" class="button-w3ls mt-4 mb-3">View More
-								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-							</a>
-						</div>
-					</div>
-				</div>
+				
 				<!-- //blog grid -->
 			</div>
 		</div>

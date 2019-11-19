@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Tasty Burger Restaurants Category Bootstrap Responsive Web Template | Menu :: W3layouts</title>
+	<title>Priangan pusat oleh-oleh dan camilan di kota bogor</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -69,12 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="col-xl-5 col-md-7 top-social-agile text-md-right text-center pr-sm-0 mt-md-0 mt-2">
 						<div class="row middle-flex">
-							<div class="col-lg-5 col-4 top-w3layouts p-md-0 text-right">
-								<!-- login -->
-								<a href="login.html" class="btn login-button-2 text-uppercase text-wh">
-									<span class="fa fa-sign-in mr-2"></span>Login</a>
-								<!-- //login -->
-							</div>
+							
 							<div class="col-lg-7 col-8 social-grid-w3">
 								<!-- social icons -->
 								<ul class="top-right-info">
@@ -171,32 +166,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					enim totam rem aperiam.</p>
 			</div>
 			<div class="row mt-4">
+			<?php 
+				foreach($produk as $p){
+			?>
 				<div class="col-md-4">
 					<div class="gallery-demo">
 						<a href="#gal1">
-							<img src="<?php echo base_url();?>/assets/images/blog1.jpg" alt=" " class="img-fluid" />
-							<h4 class="p-mask">French Burger - <span>$22</span></h4>
+							<img src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt=" " class="img-fluid" />
+							<h4 class="p-mask"><?php echo "$p[keterangan]"?></h4>
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4 mt-md-0 mt-4">
-					<div class="gallery-demo">
-						<a href="#gal2">
-							<img src="<?php echo base_url();?>/assets/images/blog2.jpg" alt=" " class="img-fluid" />
-							<h4 class="p-mask">Veg Muffin - <span>$16</span></h4>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4 mt-md-0 mt-4">
-					<div class="gallery-demo">
-						<a href="#gal3">
-							<img src="<?php echo base_url();?>/assets/images/blog3.jpg" alt=" " class="img-fluid" />
-							<h4 class="p-mask">Brioche - <span>$18</span></h4>
-						</a>
-					</div>
-				</div>
+			<?php 
+				}
+			?>
 			</div>
-			<div class="row mt-md-5">
+			<!-- <div class="row mt-md-5">
 				<div class="col-md-4 mt-md-0 mt-4">
 					<div class="gallery-demo">
 						<a href="#gal4">
@@ -221,7 +206,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 

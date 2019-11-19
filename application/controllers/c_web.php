@@ -13,8 +13,8 @@ class c_web extends CI_Controller {
 	}
 	public function index()
 	{
-		$data["wisata"]=$this->m_web->readWisata();
-		$data["guide"]=$this->m_web->readGuide();
+		$data["banner"]=$this->m_web->get_banner();
+		$data["instagram"]=$this->m_web->get_instagram();
 		$this->load->view('tampilanAwal',$data);
 	}
 	public function tampilanHome()
