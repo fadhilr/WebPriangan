@@ -32,23 +32,18 @@ class c_login extends CI_Controller {
 	}
 	public function index()
 	{
-		
-		
 		$nama =  $this->input->post('nama');
 		$password =  $this->input->post('password');
-		$this->load->model('M_login');
-		$datas = $this->M_login->get_admin()->result();	
+		$datas = $this->m_login->get_admin()->result();	
 		$home = base_url();
 		foreach ($datas as $d){
-			if($d->nama==$nama && $d->password==$password){
+			if($d->username==$nama && $d->password==md5($password)){
 				$this->session->set_userdata('username',$nama);
 				redirect($home."c_admin/tampilanAdmin/");
 			}
 		}
 				$gagal['gagal'] = "gagal";
 				$this->load->view('tampilanLoginAdmin', $gagal);
-	
-		//$this->load->view('Admin_dashboard');
 	}
 	public function alumni(){
 		$email =  $this->input->post('email');

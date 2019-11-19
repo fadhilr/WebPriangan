@@ -139,8 +139,8 @@
         <!--PAGE GUIDE -->
         <li class="active">
           <a href="<?php echo base_url();?>c_admin/adminInstagram">
-            <i class="fa fa-child"></i>
-            <span>Guide</span>
+            <i class="fa fa-instagram"></i>
+            <span>Foto IG</span>
             <span class="pull-right-container">
               <!-- <span class="label label-primary pull-right">4</span> -->
             </span>
@@ -151,7 +151,7 @@
          <li class="">
           <a href="<?php echo base_url();?>C_admin/galeriAdmin">
             <i class="fa fa-photo"></i>
-            <span>Galeri</span>
+            <span>Produk</span>
             <span class="pull-right-container">
               <!-- <span class="label label-primary pull-right">4</span> -->
             </span>
@@ -219,8 +219,8 @@
                   <input type="text" class="form-control" id="nama" value="" name="nama" placeholder="Masukkan nama "> 
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Tanggal Post Ig</label>
-                  <input type="text" class="form-control" id="tanggal" value="" name="tanggal" placeholder="Masukkan tanggal"> 
+                  <label for="exampleInputEmail1">Link Foto Ig</label>
+                  <input type="text" class="form-control" id="tanggal" value="" name="link" placeholder="Masukkan link"> 
                 </div>
                 
                 <div class="box-footer">

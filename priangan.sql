@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2019 at 11:51 PM
+-- Generation Time: Nov 19, 2019 at 09:18 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -53,6 +53,15 @@ CREATE TABLE `banner` (
   `namaBanner` varchar(50) NOT NULL,
   `fotoBanner` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `banner`
+--
+
+INSERT INTO `banner` (`id`, `namaBanner`, `fotoBanner`) VALUES
+(2, 'andi iman', 'Capture.PNG'),
+(3, 'aiaa', '12.JPG'),
+(4, 'Fadhil Rizqullah Saniputra', 'liquid.JPG');
 
 -- --------------------------------------------------------
 
@@ -110,7 +119,7 @@ INSERT INTO `guide` (`idGuide`, `fotoGuide`, `namaGuide`, `emailGuide`, `notelpG
 CREATE TABLE `instagram` (
   `id` int(50) NOT NULL,
   `namaIg` varchar(50) NOT NULL,
-  `tanggalPost` varchar(50) NOT NULL,
+  `linkIg` varchar(50) NOT NULL,
   `fotoIg` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -118,8 +127,12 @@ CREATE TABLE `instagram` (
 -- Dumping data for table `instagram`
 --
 
-INSERT INTO `instagram` (`id`, `namaIg`, `tanggalPost`, `fotoIg`) VALUES
-(1, 'admin', '121121', 'afraide2.JPG');
+INSERT INTO `instagram` (`id`, `namaIg`, `linkIg`, `fotoIg`) VALUES
+(1, 'admin', '121121', 'afraide2.JPG'),
+(2, 'mejas', '231211', '14230204890811.png'),
+(3, 'admin', '121121', '1717561.jpg'),
+(4, 'andi iman', '231211', '75220.jpg'),
+(5, 'Fadhil Rizqullah Saniputra', 'wwwwww', '4.jpg');
 
 -- --------------------------------------------------------
 
@@ -164,7 +177,6 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `keterangan`, `fotoProduk`) VALUES
-(1, 'jancuk', 'oaisnoiasoicnasc'),
 (2, 'asndoiasdoias', 'oaisncoianscas'),
 (3, 'lampu', 'bebek'),
 (4, 'kelas', 'wess'),
@@ -250,7 +262,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `galeri`
@@ -268,7 +280,7 @@ ALTER TABLE `guide`
 -- AUTO_INCREMENT for table `instagram`
 --
 ALTER TABLE `instagram`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `paketwisata`

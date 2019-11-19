@@ -165,7 +165,7 @@ class c_admin extends CI_Controller {
 			$this->tampilanTambahIg($error);
 		}else{
 			$nama =  $this->input->post('nama');
-			$tanggal =  $this->input->post('tanggal');
+			$link =  $this->input->post('link');
 			$upload_data = $this->upload->data();
 			$foto =  $upload_data['file_name'];
 			
@@ -174,7 +174,7 @@ class c_admin extends CI_Controller {
 		$data = array(
 			'namaIg' => $nama,
 			'fotoIg' => $foto,
-			'tanggalPost' => $tanggal
+			'linkIg' => $link
 			);
 
 			$this->m_admin->set_instagram($data,'instagram');

@@ -201,7 +201,7 @@
 	<!-- about -->
 	<!-- //about -->
 
-	<!-- specials -->
+	<!-- Foto IG -->
 	<section class="blog_w3ls py-5">
 		<div class="container pb-xl-5 pb-lg-3">
 			<div class="title-section text-center mb-md-5 mb-4">
@@ -216,12 +216,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="card border-0 med-blog">
 						<div class="card-header p-0">
-							<a href="menu.html">
+							<a href="<?php echo "$i[linkIg]" ?>">
 								<img class="card-img-bottom" src="<?php echo base_url();?>/assets/images/foto/<?php echo "$i[fotoIg]" ?>" alt="Card image cap">
 							</a>
 						</div>
 						<div class="card-body border border-top-0">
-							<h5 class="blog-title card-title m-0"><a href="menu.html"><?php echo "$i[namaIg]" ?></a></h5>
+							<h5 class="blog-title card-title m-0"><a href="<?php echo "$i[linkIg]" ?>"><?php echo "$i[linkIg]" ?></a></h5>
 							
 						</div>
 					</div>
@@ -235,7 +235,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- //specials -->
+	<!-- //Foto IG -->
 
 	<!-- two grids -->
 	<!-- <section class="offer pt-lg-3">

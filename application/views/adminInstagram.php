@@ -226,7 +226,7 @@ if($this->session->userdata('username')==null){
                   <th>Nomor </th>
                   <th>Thumbnail</th>
                   <th>Nama </th>
-                  <th>Tanggal post </th>
+                  <th>Link IG </th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
@@ -241,7 +241,7 @@ if($this->session->userdata('username')==null){
                     <img src="<?php echo base_url();?>/assets/images/foto/<?php echo "$a[fotoIg]"?>" class="" alt="User Image" width="150px" height="150px">                    
                   </td>
                   <td><?php echo "$a[namaIg]" ?></td>
-                  <td><?php echo "$a[tanggalPost]" ?></td>
+                  <td><?php echo "$a[linkIg]" ?></td>
                   <td><div class="btn-group">
                       <a href="<?php echo base_url(); ?>c_admin/tampilanInfoInstagram/<?php echo "$a[id]" ?>" type="button" class="btn btn-info btn-flat"><i class="fa fa-info"></i></a>
                       <a href="<?php echo base_url(); ?>c_admin/tampilanEditInstagram/<?php echo "$a[id]" ?>" type="button" class="btn btn-warning btn-flat"><i class="fa fa-edit"></i></a>
@@ -260,7 +260,7 @@ if($this->session->userdata('username')==null){
                   <th>Nomor </th>
                   <th>Thumbnail</th>
                   <th>Nama </th>
-                  <th>Tanggal Post </th>
+                  <th>Link IG </th>
                   <th>Aksi</th>
                   
                 </tr>
