@@ -208,7 +208,7 @@
                 <div class="form-group">
                   <label for="exampleInputFile">Foto Produk</label>
                   <p class="help-block"><?php if($error!=""){echo $error;}?></p>  
-                  <input type="file" id="exampleInputFile" name="berkas">
+                  <input type="file" id="exampleInputFile" name="berkas" required>
 
                   <p class="help-block">Max size foto : 5 MB</p>
                 

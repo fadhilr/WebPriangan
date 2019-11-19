@@ -128,7 +128,7 @@ class c_admin extends CI_Controller {
 
 	public function aksi_upload(){
 		$config['upload_path']          = './assets/images/foto/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 5000;
  
 		$this->load->library('upload', $config);
@@ -155,7 +155,7 @@ class c_admin extends CI_Controller {
 	}
 	public function aksi_uploadIg(){
 		$config['upload_path']          = './assets/images/foto/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 5000;
  
 		$this->load->library('upload', $config);
@@ -184,7 +184,7 @@ class c_admin extends CI_Controller {
 	}
 	public function aksi_uploadProduk(){
 		$config['upload_path']          = './assets/images/produk/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 5000;
  
 		$this->load->library('upload', $config);
@@ -211,7 +211,7 @@ class c_admin extends CI_Controller {
 	}
 	public function editBanner($id){
 		$config['upload_path']          = './assets/images/foto/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 10000;
  
 		$this->load->library('upload', $config);
@@ -240,7 +240,7 @@ class c_admin extends CI_Controller {
 	}
 	public function editInstagram($id){
 		$config['upload_path']          = './assets/images/foto/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 10000;
  
 		$this->load->library('upload', $config);
@@ -271,7 +271,7 @@ class c_admin extends CI_Controller {
 	}
 	public function editProduk($id){
 		$config['upload_path']          = './assets/images/produk/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 10000;
  
 		$this->load->library('upload', $config);

@@ -200,7 +200,7 @@
                   <label for="exampleInputFile">Foto Banner</label>
                  <!--  <p class="help-block"><?php if($error!=""){echo $error;}?></p> --><br>
                   <img src="<?php echo base_url(); ?>assets/images/foto/<?php echo $fotoBanner ?>" width="400px" ">
-                  <input type="file" id="exampleInputFile" name="berkas">
+                  <input type="file" id="exampleInputFile" name="berkas" required>
 
                   <p class="help-block">Max size foto : 3 MB</p>
                 
