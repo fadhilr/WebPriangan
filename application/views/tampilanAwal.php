@@ -221,7 +221,7 @@
 							</a>
 						</div>
 						<div class="card-body border border-top-0">
-							<h5 class="blog-title card-title m-0"><a href="<?php echo "$i[namaIg]" ?>"><?php echo "$i[linkIg]" ?></a></h5>
+							<h5 class="blog-title card-title m-0"><a href="<?php echo "$i[linkIg]" ?>"><?php echo "$i[namaIg]" ?></a></h5>
 							
 						</div>
 					</div>

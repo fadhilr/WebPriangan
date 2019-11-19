@@ -84,7 +84,7 @@ class c_admin extends CI_Controller {
 			"id"=> $wst[0]['id'], 
 			"namaIg" => $wst[0]['namaIg'], 
 			"fotoIg" => $wst[0]['fotoIg'], 
-			"tanggalPost" => $wst[0]['tanggalPost']
+			"linkIg" => $wst[0]['linkIg']
 		);
 		$this->load->view('tampilanEditInstagram',$data);
 		
@@ -96,7 +96,7 @@ class c_admin extends CI_Controller {
 			"id"=> $wst[0]['id'], 
 			"namaIg" => $wst[0]['namaIg'], 
 			"fotoIg" => $wst[0]['fotoIg'], 
-			"tanggalPost" => $wst[0]['tanggalPost']
+			"linkIg" => $wst[0]['linkIg']
 		);
 		$this->load->view('tampilanInfoInstagram',$data);
 		

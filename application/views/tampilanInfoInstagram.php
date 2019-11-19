@@ -221,8 +221,8 @@
                    <input type="text" class="form-control" id="nama" value="<?php echo $namaIg ?>" name="namaGuide" placeholder="Masukkan nama" disabled> 
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Tanggal Post</label>
-                  <input type="text" class="form-control" id="nama" value="<?php echo $tanggalPost ?>" name="emailGuide" placeholder="Masukkan E-mail" disabled> 
+                  <label for="exampleInputEmail1">Link Foto Ig</label>
+                  <input type="text" class="form-control" id="nama" value="<?php echo $linkIg ?>" name="link" placeholder="Masukkan E-mail" disabled> 
                 </div>
                 
         

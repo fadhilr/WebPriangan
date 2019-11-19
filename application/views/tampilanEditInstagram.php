@@ -213,8 +213,8 @@
                    <input type="text" class="form-control" id="nama" value="<?php echo $namaIg ?>" name="nama" placeholder="Masukkan nama" > 
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Tanggal post</label>
-                  <input type="text" class="form-control" id="tanggal" value="<?php echo $tanggalPost ?>" name="tanggal" placeholder="Masukkan E-mail"> 
+                  <label for="exampleInputEmail1">Link Foto Ig</label>
+                  <input type="text" class="form-control" id="tanggal" value="<?php echo $linkIg ?>" name="link" placeholder="Masukkan E-mail"> 
                 </div>
                 
         </div>
