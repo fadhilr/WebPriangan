@@ -19,8 +19,8 @@ class c_web extends CI_Controller {
 	}
 	public function tampilanHome()
 	{
-		$data['instagram']=$this->m_web->get_instagram();
-		
+		$data["banner"]=$this->m_web->get_banner();
+		$data["instagram"]=$this->m_web->get_instagram();
 		$this->load->view('tampilanAwal',$data);
 	}
 	public function tampilanDetail($id)

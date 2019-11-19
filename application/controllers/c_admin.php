@@ -253,14 +253,14 @@ class c_admin extends CI_Controller {
 			$nama =  $this->input->post('nama');
 			$upload_data = $this->upload->data();
 			$foto =  $upload_data['file_name'];
-			$tanggal =  $this->input->post('tanggal');
+			$link =  $this->input->post('link');
 			
 			$this->load->model('m_admin');
 		
 		$data = array(
 			'namaIg' => $nama,
 			'fotoIg' => $foto,
-			'tanggalPost' => $tanggal
+			'linkIg' => $link
 			);
 
 			$this->m_admin->update_instagram($data,$id,'instagram');

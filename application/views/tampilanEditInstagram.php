@@ -214,7 +214,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Link Foto Ig</label>
-                  <input type="text" class="form-control" id="tanggal" value="<?php echo $linkIg ?>" name="link" placeholder="Masukkan E-mail"> 
+                  <input type="text" class="form-control" id="link" value="<?php echo $linkIg ?>" name="link" placeholder="Masukkan E-mail"> 
                 </div>
                 
         </div>
