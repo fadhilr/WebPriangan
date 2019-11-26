@@ -148,15 +148,10 @@
 			<div class="col-xl-12 col-lg-6">
 				<div class="banner-left-w3">
 					<div class="container">
-						<div class="banner-info_agile_w3ls">
+						<div class="banner-info_agile_w3ls" style="padding-top: 9px;">
 							<h5>Toko oleh-oleh bogor</h5>
 							<h3 class="text-da mb-4">Priangan <span>Sari</span> </h3>
-							<a href="<?php echo base_url(); ?>c_web/tampilanProduk" class="button-w3ls active mt-5">Read More
-								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-							</a>
-							<a href="<?php echo base_url(); ?>c_web/tampilanHow" class="button-w3ls mt-5 ml-2">Order Now
-								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-							</a>
+							
 						</div>
 					</div>
 				</div>
@@ -176,10 +171,22 @@
 						
 						<div class="carousel-item active">
 							<img src="<?php echo base_url();?>/assets/images/Banner1.jpg" class="" alt="User Image" width="100%" height="600px">
+							<a href="<?php echo base_url(); ?>c_web/tampilanProduk" class="button-w3ls active mt-5">Read More
+								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+							</a>
+							<a href="<?php echo base_url(); ?>c_web/tampilanHow" class="button-w3ls mt-5 ml-2">Order Now
+								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+							</a>
 						</div>
 						<?php foreach($banner as $a) { ?>
 						<div class="carousel-item">
 							<img src="<?php echo base_url();?>/assets/images/foto/<?php echo "$a[fotoBanner]"?>" class="" alt="User Image" width="100%" height="600px">
+							<a href="<?php echo base_url(); ?>c_web/tampilanProduk" class="button-w3ls active mt-5">Read More
+								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+							</a>
+							<a href="<?php echo base_url(); ?>c_web/tampilanHow" class="button-w3ls mt-5 ml-2">Order Now
+								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+							</a>
 						</div>
 						<?php } ?>
 					</div>
