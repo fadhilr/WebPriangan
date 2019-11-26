@@ -170,7 +170,7 @@
 					<div class="carousel-inner">
 						
 						<div class="carousel-item active">
-							<img src="<?php echo base_url();?>/assets/images/Banner1.jpg" class="" alt="User Image" width="100%" height="600px">
+							<img src="<?php echo base_url();?>/assets/images/Banner1.jpg" class="" alt="User Image" width="100%" height="700px">
 							<a href="<?php echo base_url(); ?>c_web/tampilanProduk" class="button-w3ls active mt-5">Read More
 								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 							</a>
@@ -180,7 +180,7 @@
 						</div>
 						<?php foreach($banner as $a) { ?>
 						<div class="carousel-item">
-							<img src="<?php echo base_url();?>/assets/images/foto/<?php echo "$a[fotoBanner]"?>" class="" alt="User Image" width="100%" height="600px">
+							<img src="<?php echo base_url();?>/assets/images/foto/<?php echo "$a[fotoBanner]"?>" class="" alt="User Image" width="100%" height="700px">
 							<a href="<?php echo base_url(); ?>c_web/tampilanProduk" class="button-w3ls active mt-5">Read More
 								<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 							</a>
