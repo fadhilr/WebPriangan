@@ -56,12 +56,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="row">
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-map-marker mr-2"></span>Parma Via, Italy
+									<span class="fa fa-map-marker mr-2"></span>Bogor
 								</p>
 							</div>
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-phone mr-2"></span>+1 000263676
+									<span class="fa fa-phone mr-2"></span>(0251) – 8253405
 								</p>
 							</div>
 							<div class="col-xl-6"></div>
@@ -70,10 +70,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-xl-5 col-md-7 top-social-agile text-md-right text-center pr-sm-0 mt-md-0 mt-2">
 						<div class="row middle-flex">
 							<div class="col-lg-5 col-4 top-w3layouts p-md-0 text-right">
-								<!-- login -->
-								<a href="login.html" class="btn login-button-2 text-uppercase text-wh">
-									<span class="fa fa-sign-in mr-2"></span>Login</a>
-								<!-- //login -->
 							</div>
 							<div class="col-lg-7 col-8 social-grid-w3">
 								<!-- social icons -->
@@ -120,8 +116,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- logo -->
 				<h1>
 					<a id="logo" class="logo" href="<?php echo base_url(); ?>c_web/tampilanHome">
-						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
-					</a>
+						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
 				</h1>
 				<!-- //logo -->
 				<!-- nav -->
@@ -154,7 +149,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="breadcrumb-agile bg-light py-2">
 		<ol class="breadcrumb bg-light m-0">
 			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
+				<a href="<?php echo base_url();?>">Home</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">About Us</li>
 		</ol>
@@ -166,19 +161,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container py-xl-5 py-lg-3">
 			<div class="title-section text-center mb-md-5 mb-4">
 				<h3 class="w3ls-title mb-3">About <span>Us</span></h3>
-				<p class="titile-para-text mx-auto">Inventore veritatis et quasi architecto beatae vitae dicta sunt
-					explicabo.Nemo
-					enim totam rem aperiam.</p>
+				<h4 class="titile-para-text mx-auto">Adalah perusahaan yang bergerak dibidang penjualan ritel  untuk jenis makanan daerah terutama daerah Jawa Barat. Priangan Sari Sejahtera berdiri pada tahun 1992 di Bandung oleh sepasang suami istri dengan menjual buah-buahan dan makanan daerah bandung. pada tahun 1997 priangansari berpindah lokasi ke daerah Bogor dengan tetap menjual buah-buahan dan makanan namun dengan jenis yang lebih banyak dan mendirikan sebuah rumah makan pada tahun 2011</h4>
 			</div>
 			<div class="row">
 				<div class="col-lg-6 pr-xl-5 mt-xl-2 mt-lg-0">
-					<h3 class="title-sub mb-4">Donec conse sapien archi<br>ut cursus rhons.</h3>
-					<p class="sub-para">Nullam dui mi, vulputate ac metus
-						at, semper
-						varius orci. Nulla accumsan ac elit in congue. Class aptent taciti sociosqu ad litora torquent
-						per conubia.</p>
-					<p class="sub-para pt-4 mt-4 border-top">Donec consequat sapien ut leo cursus rhoncus. Nullam dui
-						mi, vulputate ac metus at, semper varius orci..</p>
+					<h3 class="title-sub mb-4">PRIANGAN SARI MEMPUNYAI VISI</h3>
+					<p class="sub-para">1. Untuk menjadi sentra oleh-oleh terbesar se-Jawa Barat dengan menyediakan produk yang berkualitas kepada masyarakat</p>
+					<br>
+					<p>2. Menjadi sentra oleh-oleh pilihan pertama bagi konsumen ataupun komunitas.</p>
+					<p class="sub-para pt-4 mt-4 border-top"></p>
+					<h3 class="title-sub mb-4">DENGAN MISI</h3>
+					<p class="sub-para">1. Meningkatkan kualitas produk yang diperdagangkan baik dari bahan baku, rasa ataupun kemasan menjadi pilihan konsumennya dalam memenuhin kebutuhan masyarakat akan makanan khas daerah</p>
+					<br>
+					<p>2. Menjadi sentra oleh – oleh yang menjujung tinggi keramahan dan kejujuran dalam memberikan pelayanan terhadap konsumen.</p>
 				</div>
 				<div class="col-lg-6 text-center mt-lg-0 mt-4">
 					<img src="<?php echo base_url();?>/assets/images/ab.jpg" alt="about" class="img-fluid" />
@@ -187,190 +182,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</section>
 	<!-- //about -->
-
-	<!-- services -->
-	<section class="middle py-5" id="services">
-		<div class="container py-xl-5 py-lg-3">
-			<div class="title-section text-center mb-md-5 mb-4">
-				<p class="w3ls-title-sub">Our Work</p>
-				<h3 class="w3ls-title mb-3">Excellent <span>Services</span></h3>
-			</div>
-			<div class="row grids-w3 py-xl-5 py-lg-4 pt-lg-0 pt-4">
-				<div class="col-lg-5 w3pvt-lauits_banner_bottom_left">
-					<div class="row">
-						<div class="col-8 wthree_banner_bottom_grid_right text-right">
-							<h4 class="mb-3"><a href="login.html">Free Shipping</a></h4>
-							<p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
-						</div>
-						<div class="col-4 wthree_banner_bottom_grid_left text-lg-right text-center">
-							<img src="<?php echo base_url();?>/assets/images/s1.png" alt="" class="img-fluid">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 w3pvt-lauits_banner_bottom_left">
-
-				</div>
-				<div class="col-lg-5 w3pvt-lauits_banner_bottom_left mt-lg-0 mt-4">
-					<div class="row">
-						<div class="col-4 wthree_banner_bottom_grid_left text-lg-right text-center">
-							<img src="<?php echo base_url();?>/assets/images/s2.png" alt="" class="img-fluid">
-						</div>
-						<div class="col-8 wthree_banner_bottom_grid_right">
-							<h4 class="mb-3"><a href="login.html">Free & Easy Returns</a></h4>
-							<p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row grids-w3 py-xl-5 py-lg-4 mt-lg-0 mt-4">
-				<div class="col-lg-4 w3pvt-lauits_banner_bottom_left">
-					<div class="row">
-						<div class="col-8 wthree_banner_bottom_grid_right text-right pl-lg-0">
-							<h4 class="mb-3"><a href="login.html">Online Order</a></h4>
-							<p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
-						</div>
-						<div class="col-4 wthree_banner_bottom_grid_left text-lg-right text-center pr-lg-0">
-							<img src="<?php echo base_url();?>/assets/images/s3.png" alt="" class="img-fluid">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 w3pvt-lauits_banner_bottom_left pr-0">
-
-				</div>
-				<div class="col-lg-4 w3pvt-lauits_banner_bottom_left mt-lg-0 mt-4">
-					<div class="row">
-						<div class="col-4 wthree_banner_bottom_grid_left text-lg-right text-center pl-lg-0">
-							<img src="<?php echo base_url();?>/assets/images/s4.png" alt="" class="img-fluid">
-						</div>
-						<div class="col-8 wthree_banner_bottom_grid_right pr-lg-0">
-							<h4 class="mb-3"><a href="login.html">24/7 Support</a></h4>
-							<p>Morbi viverra lacus commodo felis semper lectus feugiat.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="img-blog-2">
-			<img src="<?php echo base_url();?>/assets/images/img.png" alt="" class="img-fluid">
-		</div>
-	</section>
-	<!-- //services -->
-
-	<!-- team -->
-	<div class="team py-5" id="chefs">
-		<div class="container-fluid py-xl-5 py-lg-3">
-			<div class="title-section text-center mb-md-5 mb-4">
-				<h3 class="w3ls-title mb-3">Our <span>Chefs</span></h3>
-				<p class="titile-para-text mx-auto">Inventore veritatis et quasi architecto beatae vitae dicta sunt
-					explicabo.Nemo
-					enim totam rem aperiam.</p>
-			</div>
-			<div class="row team-bottom pt-4">
-				<div class="col-lg-3 col-6 team-grid">
-					<a href="#team"><img src="<?php echo base_url();?>/assets/images/t1.png" class="img-fluid" alt=""></a>
-					<div class="caption">
-						<div class="team-text">
-							<h4><a href="#team">Mack Joe</a></h4>
-						</div>
-						<ul>
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook f1" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter f2" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-google-plus f3" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 team-grid">
-					<a href="#team"><img src="<?php echo base_url();?>/assets/images/t2.png" class="img-fluid" alt=""></a>
-					<div class="caption">
-						<div class="team-text">
-							<h4><a href="#team">Cruz Deo</a></h4>
-						</div>
-						<ul>
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook f1" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter f2" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-google-plus f3" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 team-grid mt-lg-0 mt-4">
-					<a href="#team"><img src="<?php echo base_url();?>/assets/images/t3.png" class="img-fluid" alt=""></a>
-					<div class="caption">
-						<div class="team-text">
-							<h4><a href="#team">Rochy Jae</a></h4>
-						</div>
-						<ul>
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook f1" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter f2" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-google-plus f3" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 team-grid  mt-lg-0 mt-4">
-					<a href="#team"><img src="<?php echo base_url();?>/assets/images/t4.png" class="img-fluid" alt=""></a>
-					<div class="caption">
-						<div class="team-text">
-							<h4><a href="#team">Rojo Poy</a></h4>
-						</div>
-						<ul>
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook f1" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter f2" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-google-plus f3" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //team -->
-
 	<!-- footer -->
 	<footer class="py-5">
 		<div class="container py-xl-4">
@@ -378,16 +189,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-lg-4 footer-grid_section_1its footer-text">
 					<!-- logo -->
 					<h2>
-						<a class="logo text-wh" href="index.html">
-							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
-						</a>
+						<a class="logo text-wh" href="<?php echo base_url(); ?>c_web/tampilanHome">
+							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
 					</h2>
 					<!-- //logo -->
-					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Sed ut perspiciatis unde omnis iste natus errorhjhsit lupt
-						atem
-						accursit lupt atem accu
-						dfdsa
-						ntium doloremque laudan tium accu santium dolore.</p>
+					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Tokoh Oleh Oleh Bogor</p>
 					<!-- social icons -->
 					<ul class="top-right-info">
 						<li>
@@ -421,28 +227,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3>Contact Us</h3>
 					</div>
 					<div class="footer-text mt-4">
-						<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
-						<p class="my-2">Phone : +12 534894364</p>
-						<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+						<p>Address : Jl.Raya Puncak Cibogo No.53 Cipayung – Bogor</p>
+						<p class="my-2">Phone : (0251) – 8253405</p>
+						<p>Email : <a href="mailto:info@example.com">info@priangansari.co.id</a></p>
 					</div>
 					<div class="footer-title mt-4 pt-md-2">
-						<h3>Payment Method</h3>
+						<h3>Delivery Order</h3>
 					</div>
-					<ul class="list-unstyled payment-links mt-4">
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay2.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay5.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay1.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay4.png" alt=""></a>
-						</li>
-					</ul>
-				</div>
+					<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari"><img src="<?php echo base_url();?>/assets/images/deliveryorder.png" alt=""></a>
+					</div>
 				<div class="col-lg-4 footer-grid_section_1its">
 					<div class="footer-title">
 						<h3>Request Info</h3>
@@ -475,8 +268,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="cpy-right text-center py-3">
-		<p>© 2019 Tasty Burger. All rights reserved | Design by
-			<a href="http://w3layouts.com"> W3layouts.</a>
+		<p>© 2019 Priangan Sari | Design by
+			<a href="http://instagram.com/ragafur"> RAG.</a>
 		</p>
 	</div>
 	<!-- //copyright -->

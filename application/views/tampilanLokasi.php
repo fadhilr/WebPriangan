@@ -25,7 +25,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 	</script>
 	<!--// Meta tag Keywords -->
+<!--//Table-->
+<style>
+#store {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+#store td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#store tr:nth-child(even){background-color: #f2f2f2;}
+
+#store tr:hover {background-color: #ddd;}
+
+#store th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ffcb00;
+  color: white;
+}
+</style>
+<!-- Table-->
 	<!-- Custom-Files -->
 	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
@@ -56,12 +81,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="row">
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-map-marker mr-2"></span>Parma Via, Italy
+									<span class="fa fa-map-marker mr-2"></span>Bogor
 								</p>
 							</div>
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-phone mr-2"></span>+1 000263676
+									<span class="fa fa-phone mr-2"></span>(0251) – 8253405
 								</p>
 							</div>
 							<div class="col-xl-6"></div>
@@ -70,11 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-xl-5 col-md-7 top-social-agile text-md-right text-center pr-sm-0 mt-md-0 mt-2">
 						<div class="row middle-flex">
 							<div class="col-lg-5 col-4 top-w3layouts p-md-0 text-right">
-								<!-- login -->
-								<a href="login.html" class="btn login-button-2 text-uppercase text-wh">
-									<span class="fa fa-sign-in mr-2"></span>Login</a>
-								<!-- //login -->
-							</div>
+														</div>
 							<div class="col-lg-7 col-8 social-grid-w3">
 								<!-- social icons -->
 								<ul class="top-right-info">
@@ -120,7 +141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- logo -->
 				<h1>
 					<a id="logo" class="logo" href="<?php echo base_url(); ?>c_web/tampilanHome">
-						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
+						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid">
 					</a>
 				</h1>
 				<!-- //logo -->
@@ -154,21 +175,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="breadcrumb-agile bg-light py-2">
 		<ol class="breadcrumb bg-light m-0">
 			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
+				<a href="<?php echo base_url(); ?>c_web/tampilanHome">Home</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
 		</ol>
 	</div>
 	<!-- //page details -->
 
-	<!-- contact -->
-	
-	<!-- contact -->
+	<!--Our Store & Facility -->
+	<section class="w3ls-bnrbtm py-5" id="about">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section text-center mb-md-5 mb-4">
+				<h3 class="w3ls-title mb-3">Our Store <span>Facility</span></h3>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-lg-6 pr-xl-5 mt-xl-2 mt-lg-0">
+					<h3 class="title-sub mb-4">PRIANGAN SARI – KOPO</h3>
+					<p class="sub-para"><img width="520" height="300" src="<?php echo base_url();?>/assets/images/ab.jpg"/></p>
+					<p class="sub-para pt-4 mt-4 border-top"><img width="520" height="50" src="<?php echo base_url();?>/assets/images/facility.jpg"/></p>
+				</div>
+				<div class="col-lg-6 text-center mt-lg-0 mt-4">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d15851.411142680114!2d106.92485164906311!3d-6.6651586782383445!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-6.6661737!2d106.92259109999999!5e0!3m2!1sen!2sid!4v1574358583711!5m2!1sen!2sid" width="600" height="480" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Our Store & Facility -->
 	<!-- map -->
 	<section class="map">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.69191921441556!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1522474296007"
-			allowfullscreen></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15851.770208193091!2d106.8783538!3d-6.654043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x955b8a1c7c6d9522!2sPriangan%20Sari%20-%20Cibogo!5e0!3m2!1sid!2sid!4v1574328068214!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	</section>
 	<!-- //map -->
 
@@ -179,16 +215,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-lg-4 footer-grid_section_1its footer-text">
 					<!-- logo -->
 					<h2>
-						<a class="logo text-wh" href="index.html">
-							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
-						</a>
+						<a class="logo text-wh" href="<?php echo base_url(); ?>c_web/tampilanHome">
+							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
 					</h2>
 					<!-- //logo -->
-					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Sed ut perspiciatis unde omnis iste natus errorhjhsit lupt
-						atem
-						accursit lupt atem accu
-						dfdsa
-						ntium doloremque laudan tium accu santium dolore.</p>
+					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Tokoh Oleh Oleh Bogor</p>
 					<!-- social icons -->
 					<ul class="top-right-info">
 						<li>
@@ -222,28 +253,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3>Contact Us</h3>
 					</div>
 					<div class="footer-text mt-4">
-						<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
-						<p class="my-2">Phone : +12 534894364</p>
-						<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+						<p>Address : Jl.Raya Puncak Cibogo No.53 Cipayung – Bogor</p>
+						<p class="my-2">Phone : (0251) – 8253405</p>
+						<p>Email : <a href="mailto:info@example.com">info@priangansari.co.id</a></p>
 					</div>
 					<div class="footer-title mt-4 pt-md-2">
-						<h3>Payment Method</h3>
+						<h3>Delivery Order</h3>
 					</div>
-					<ul class="list-unstyled payment-links mt-4">
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay2.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay5.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay1.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay4.png" alt=""></a>
-						</li>
-					</ul>
-				</div>
+					<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari"><img src="<?php echo base_url();?>/assets/images/deliveryorder.png" alt=""></a>
+					</div>
 				<div class="col-lg-4 footer-grid_section_1its">
 					<div class="footer-title">
 						<h3>Request Info</h3>
@@ -276,8 +294,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="cpy-right text-center py-3">
-		<p>© 2019 Tasty Burger. All rights reserved | Design by
-			<a href="http://w3layouts.com"> W3layouts.</a>
+		<p>© 2019 Priangan Sari | Design by
+			<a href="http://instagram.com/ragafur"> RAG.</a>
 		</p>
 	</div>
 	<!-- //copyright -->

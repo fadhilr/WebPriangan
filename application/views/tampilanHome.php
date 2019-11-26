@@ -72,7 +72,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!-- navbar-header -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right ">
-				<li><a class="hvr-underline-from-center active" href="index.html">Home</a></li>
+				<li><a class="hvr-underline-from-center active" href="<?php echo base_url(); ?>c_web/tampilanHome">Home</a></li>
 				<li><a href="#about" class="hvr-underline-from-center scroll">About</a></li>
 				<li><a href="#services" class="hvr-underline-from-center scroll">Services</a></li>
 				<li><a href="#team" class="hvr-underline-from-center scroll">Guide</a></li>

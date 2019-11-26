@@ -56,12 +56,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="row">
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-map-marker mr-2"></span>Parma Via, Italy
+									<span class="fa fa-map-marker mr-2"></span>Bogor
 								</p>
 							</div>
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-phone mr-2"></span>+1 000263676
+									<span class="fa fa-phone mr-2"></span>(0251) – 8253405
 								</p>
 							</div>
 							<div class="col-xl-6"></div>
@@ -70,11 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-xl-5 col-md-7 top-social-agile text-md-right text-center pr-sm-0 mt-md-0 mt-2">
 						<div class="row middle-flex">
 							<div class="col-lg-5 col-4 top-w3layouts p-md-0 text-right">
-								<!-- login -->
-								<a href="login.html" class="btn login-button-2 text-uppercase text-wh">
-									<span class="fa fa-sign-in mr-2"></span>Login</a>
-								<!-- //login -->
-							</div>
+														</div>
 							<div class="col-lg-7 col-8 social-grid-w3">
 								<!-- social icons -->
 								<ul class="top-right-info">
@@ -120,7 +116,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- logo -->
 				<h1>
 					<a id="logo" class="logo" href="<?php echo base_url(); ?>c_web/tampilanHome">
-						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
+						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid">
 					</a>
 				</h1>
 				<!-- //logo -->
@@ -154,7 +150,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="breadcrumb-agile bg-light py-2">
 		<ol class="breadcrumb bg-light m-0">
 			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
+				<a href="<?php echo base_url(); ?>c_web/tampilanHome">Home</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
 		</ol>
@@ -166,9 +162,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container py-xl-5 py-lg-3">
 			<div class="title-section text-center mb-md-5 mb-4">
 				<h3 class="w3ls-title mb-3">Kontak <span>Kami</span></h3>
-				<p class="titile-para-text mx-auto">Inventore veritatis et quasi architecto beatae vitae dicta sunt
-					explicabo.Nemo
-					enim totam rem aperiam.</p>
+				<p class="titile-para-text mx-auto"></p>
 			</div>
 			<div class="row contact-agileinfo pt-lg-4">
 				<!-- contact address -->
@@ -180,7 +174,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="col-9 address-right mt-2">
 							<h5 class="address mb-2">Address</h5>
-							<p> California, USA</p>
+							<p>Jl.Raya Puncak Cibogo No.53 Cipayung – Bogor</p>
 						</div>
 					</div>
 					<div class="row address-info-w3ls my-2">
@@ -190,7 +184,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="col-9 address-right mt-2">
 							<h5 class="address mb-2">Email</h5>
 							<p>
-								<a href="mailto:example@email.com"> mail@example.com</a>
+								<a href="mailto:info@priangansari.co.id">info@priangansari.co.id</a>
 							</p>
 						</div>
 					</div>
@@ -200,7 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="col-9 address-right mt-2">
 							<h5 class="address mb-2">Phone</h5>
-							<p>+1 234 567 8901</p>
+							<p>(0251) – 8253405</p>
 						</div>
 					</div>
 				</div>
@@ -230,10 +224,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</section>
 	<!-- contact -->
-	<!-- map -->
-	
-	<!-- //map -->
-
 	<!-- footer -->
 	<footer class="py-5">
 		<div class="container py-xl-4">
@@ -241,16 +231,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-lg-4 footer-grid_section_1its footer-text">
 					<!-- logo -->
 					<h2>
-						<a class="logo text-wh" href="index.html">
-							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
-						</a>
+						<a class="logo text-wh" href="<?php echo base_url(); ?>c_web/tampilanHome">
+							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
 					</h2>
 					<!-- //logo -->
-					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Sed ut perspiciatis unde omnis iste natus errorhjhsit lupt
-						atem
-						accursit lupt atem accu
-						dfdsa
-						ntium doloremque laudan tium accu santium dolore.</p>
+					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Tokoh Oleh Oleh Bogor</p>
 					<!-- social icons -->
 					<ul class="top-right-info">
 						<li>
@@ -284,28 +269,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3>Contact Us</h3>
 					</div>
 					<div class="footer-text mt-4">
-						<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
-						<p class="my-2">Phone : +12 534894364</p>
-						<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+						<p>Address : Jl.Raya Puncak Cibogo No.53 Cipayung – Bogor</p>
+						<p class="my-2">Phone : (0251) – 8253405</p>
+						<p>Email : <a href="mailto:info@example.com">info@priangansari.co.id</a></p>
 					</div>
 					<div class="footer-title mt-4 pt-md-2">
-						<h3>Payment Method</h3>
+						<h3>Delivery Order</h3>
 					</div>
-					<ul class="list-unstyled payment-links mt-4">
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay2.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay5.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay1.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay4.png" alt=""></a>
-						</li>
-					</ul>
-				</div>
+					<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari"><img src="<?php echo base_url();?>/assets/images/deliveryorder.png" alt=""></a>
+					</div>
 				<div class="col-lg-4 footer-grid_section_1its">
 					<div class="footer-title">
 						<h3>Request Info</h3>
@@ -338,8 +310,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="cpy-right text-center py-3">
-		<p>© 2019 Tasty Burger. All rights reserved | Design by
-			<a href="http://w3layouts.com"> W3layouts.</a>
+		<p>© 2019 Priangan Sari | Design by
+			<a href="http://instagram.com/ragafur"> RAG.</a>
 		</p>
 	</div>
 	<!-- //copyright -->
@@ -348,7 +320,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<span class="fa fa-level-up" aria-hidden="true"></span>
 	</a>
 	<!-- //move top icon -->
-
 </body>
 
 </html>

@@ -56,12 +56,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="row">
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-map-marker mr-2"></span>Parma Via, Italy
+									<span class="fa fa-map-marker mr-2"></span>Bogor
 								</p>
 							</div>
 							<div class="col-xl-3 col-6 header-top_w3layouts">
 								<p class="text-da">
-									<span class="fa fa-phone mr-2"></span>+1 000263676
+									<span class="fa fa-phone mr-2"></span>(0251) – 8253405
 								</p>
 							</div>
 							<div class="col-xl-6"></div>
@@ -115,8 +115,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- logo -->
 				<h1>
 					<a id="logo" class="logo" href="<?php echo base_url(); ?>c_web/tampilanHome">
-						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
-					</a>
+						<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
 				</h1>
 				<!-- //logo -->
 				<!-- nav -->
@@ -149,7 +148,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="breadcrumb-agile bg-light py-2">
 		<ol class="breadcrumb bg-light m-0">
 			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
+				<a href="<?php echo base_url();?>">Home</a>
 			</li>
 			<li class="breadcrumb-item active" aria-current="page">Menu</li>
 		</ol>
@@ -161,9 +160,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container py-xl-5 py-lg-3">
 			<div class="title-section text-center mb-md-5 mb-4">
 				<h3 class="w3ls-title mb-3">Our <span>Produk</span></h3>
-				<p class="titile-para-text mx-auto">Inventore veritatis et quasi architecto beatae vitae dicta sunt
-					explicabo.Nemo
-					enim totam rem aperiam.</p>
+				<p class="titile-para-text mx-auto"></p>
 			</div>
 			<div class="row mt-4">
 			<?php 
@@ -171,11 +168,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			?>
 				<div class="col-md-4">
 					<div class="gallery-demo">
-						<a href="#gal1">
+						<a href="#gal<?= $p['id'] ?>">
 							<img src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt=" " class="img-fluid" />
 							<h4 class="p-mask"><?php echo "$p[keterangan]"?></h4>
 						</a>
 					</div>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
 				</div>
 			<?php 
 				}
@@ -212,23 +213,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	<!-- gallery model-->
 	<!-- gallery popup 1 -->
-	<div id="gal1" class="pop-overlay">
+	<?php 
+		foreach($produk as $p){
+	?>
+	<div id="gal<?= $p['id'] ?>" class="pop-overlay">
 		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/blog1.jpg" alt="">
-			<h4 class="p-mask">French Burger - - <span>$22</span></h4>
-			<a href="login.html" class="button-w3ls active mt-3">Order Now
+			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt="">
+			<h4 class="p-mask"><?php echo "$p[keterangan]"?></h4>
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>
 			<a class="close" href="#gallery">×</a>
 		</div>
 	</div>
+	<?php 
+		}
+	?>
 	<!-- //gallery popup 1 -->
 	<!-- gallery popup 2 -->
 	<div id="gal2" class="pop-overlay">
 		<div class="popup">
 			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/blog2.jpg" alt="">
 			<h4 class="p-mask">Veg Muffin - <span>$16</span></h4>
-			<a href="login.html" class="button-w3ls active mt-3">Order Now
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>
 			<a class="close" href="#gallery">×</a>
@@ -240,43 +247,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="popup">
 			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/blog3.jpg" alt="">
 			<h4 class="p-mask">Brioche - <span>$18</span></h4>
-			<a href="login.html" class="button-w3ls active mt-3">Order Now
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>
 			<a class="close" href="#gallery">×</a>
 		</div>
 	</div>
 	<!-- //gallery popup 3 -->
+	<br>
 	<!-- gallery popup 4 -->
 	<div id="gal4" class="pop-overlay">
 		<div class="popup">
 			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/g1.jpg" alt="">
 			<h4 class="p-mask">Cheese Burger - <span>$20</span></h4>
-			<a href="login.html" class="button-w3ls active mt-3">Order Now
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>
 			<a class="close" href="#gallery">×</a>
 		</div>
 	</div>
 	<!-- //gallery popup 4 -->
+	<br>
 	<!-- gallery popup 5 -->
 	<div id="gal5" class="pop-overlay">
 		<div class="popup">
 			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/g2.jpg" alt="">
 			<h4 class="p-mask">Chicken Burger - <span>$22</span></h4>
-			<a href="login.html" class="button-w3ls active mt-3">Order Now
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>
 			<a class="close" href="#gallery">×</a>
 		</div>
 	</div>
 	<!-- //gallery popup 5 -->
+	<br>
 	<!-- gallery popup 6 -->
 	<div id="gal6" class="pop-overlay">
 		<div class="popup">
 			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/g3.jpg" alt="">
 			<h4 class="p-mask">Veg Burger - <span>$16</span></h4>
-			<a href="login.html" class="button-w3ls active mt-3">Order Now
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>
 			<a class="close" href="#gallery">×</a>
@@ -285,23 +295,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //gallery popup 6 -->
 	<!-- //menu -->
 
-	<!-- footer -->
-	<footer class="py-5">
+<!-- footer -->
+<footer class="py-5">
 		<div class="container py-xl-4">
 			<div class="row footer-top">
 				<div class="col-lg-4 footer-grid_section_1its footer-text">
 					<!-- logo -->
 					<h2>
-						<a class="logo text-wh" href="index.html">
-							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"><span>Tasty</span> Burger
-						</a>
+						<a class="logo text-wh" href="<?php echo base_url(); ?>c_web/tampilanHome">
+							<img src="<?php echo base_url();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
 					</h2>
 					<!-- //logo -->
-					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Sed ut perspiciatis unde omnis iste natus errorhjhsit lupt
-						atem
-						accursit lupt atem accu
-						dfdsa
-						ntium doloremque laudan tium accu santium dolore.</p>
+					<p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Tokoh Oleh Oleh Bogor</p>
 					<!-- social icons -->
 					<ul class="top-right-info">
 						<li>
@@ -335,28 +340,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h3>Contact Us</h3>
 					</div>
 					<div class="footer-text mt-4">
-						<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
-						<p class="my-2">Phone : +12 534894364</p>
-						<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+						<p>Address : Jl.Raya Puncak Cibogo No.53 Cipayung – Bogor</p>
+						<p class="my-2">Phone : (0251) – 8253405</p>
+						<p>Email : <a href="mailto:info@example.com">info@priangansari.co.id</a></p>
 					</div>
 					<div class="footer-title mt-4 pt-md-2">
-						<h3>Payment Method</h3>
+						<h3>Delivery Order</h3>
 					</div>
-					<ul class="list-unstyled payment-links mt-4">
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay2.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay5.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay1.png" alt=""></a>
-						</li>
-						<li>
-							<a href="login.html"><img src="<?php echo base_url();?>/assets/images/pay4.png" alt=""></a>
-						</li>
-					</ul>
-				</div>
+					<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari"><img src="<?php echo base_url();?>/assets/images/deliveryorder.png" alt=""></a>
+					</div>
 				<div class="col-lg-4 footer-grid_section_1its">
 					<div class="footer-title">
 						<h3>Request Info</h3>
@@ -389,8 +381,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="cpy-right text-center py-3">
-		<p>© 2019 Tasty Burger. All rights reserved | Design by
-			<a href="http://w3layouts.com"> W3layouts.</a>
+		<p>© 2019 Priangan Sari | Design by
+			<a href="http://instagram.com/ragafur"> RAG.</a>
 		</p>
 	</div>
 	<!-- //copyright -->
