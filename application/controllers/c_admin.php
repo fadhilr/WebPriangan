@@ -106,6 +106,7 @@ class C_admin extends CI_Controller {
 		$wst = $this->m_admin->get_produk("where id='$id'");
 		$data = array(
 			"id"=> $wst[0]['id'], 
+			"judul" => $wst[0]['judul'], 
 			"keterangan" => $wst[0]['keterangan'], 
 			"fotoProduk" => $wst[0]['fotoProduk']
 		);
@@ -117,6 +118,7 @@ class C_admin extends CI_Controller {
 		$wst = $this->m_admin->get_produk("where id='$id'");
 		$data = array(
 			"id"=> $wst[0]['id'], 
+			"judul" => $wst[0]['judul'], 
 			"keterangan" => $wst[0]['keterangan'], 
 			"fotoProduk" => $wst[0]['fotoProduk']
 		);

@@ -208,7 +208,7 @@
                 <div class="form-group">
                   <label for="exampleInputFile">Foto Produk</label>
                  <!--  <p class="help-block"><?php if($error!=""){echo $error;}?></p> --><br>
-                  <img src="<?php echo base_url(); ?>assets/images/foto/<?php echo $fotoProduk ?>" width="400px" >
+                  <img src="<?php echo base_url(); ?>assets/images/produk/<?php echo $fotoProduk ?>" width="400px" >
                   
 
                   <p class="help-block">Example block-level help text here.</p>

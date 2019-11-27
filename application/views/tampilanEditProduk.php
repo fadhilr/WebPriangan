@@ -218,6 +218,10 @@
                 </div>
 
                 <div class="form-group">
+                  <label for="exampleInputEmail1">Judul Produk</label>
+                  <input type="text" class="form-control" id="nama" value="<?php echo $judul ?>" name="nama" placeholder="Masukkan judul "> 
+                </div>
+                <div class="form-group">
                   <label for="exampleInputEmail1">Keterangan</label>
                    <input type="text" class="form-control" id="keterangan" value="<?php echo $keterangan ?>" name="keterangan" placeholder="Masukkan nama" > 
                 </div>
