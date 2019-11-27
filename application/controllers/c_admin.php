@@ -194,6 +194,7 @@ class C_admin extends CI_Controller {
 			$this->load->view('v_upload', $error);
 		}else{
 			$keterangan =  $this->input->post('keterangan');
+			$judul =  $this->input->post('judul');
 			$upload_data = $this->upload->data();
 			$foto =  $upload_data['file_name'];
 			
@@ -201,6 +202,7 @@ class C_admin extends CI_Controller {
 		
 		$data = array(
 			'keterangan' => $keterangan,
+			'judul' => $judul,
 			'fotoProduk' => $foto
 			);
 

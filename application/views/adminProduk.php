@@ -224,6 +224,7 @@ if($this->session->userdata('username')==null){
                 <thead>
                 <tr>
                   <th>Nomor </th>
+                  <th>Nama Produk</th>
                   <th>Foto Produk</th>
                   <th>Keterangan </th>
                   <th>Aksi</th>
@@ -236,6 +237,7 @@ if($this->session->userdata('username')==null){
         ?>
                 <tr data-id="<?php echo "$a[id]"?>">
                   <td><?php echo $i++;?></td>
+                  <td><?php echo "$a[judul]" ?></td>
                   <td>
                     <img src="<?php echo base_url();?>/assets/images/produk/<?php echo "$a[fotoProduk]"?>" class="" alt="User Image" width="150px" height="150px">                    
                   </td>
@@ -258,6 +260,7 @@ if($this->session->userdata('username')==null){
                 <tfoot>
                 <tr>
                 <th>Nomor </th>
+                <th>Nama Produk</th>
                   <th>Foto Produk</th>
                   <th>Keterangan </th>
                   <th>Aksi</th>

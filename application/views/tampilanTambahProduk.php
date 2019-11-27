@@ -213,7 +213,10 @@
                   <p class="help-block">Max size foto : 5 MB</p>
                 
                 </div>
-
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Judul Produk</label>
+                  <input type="text" class="form-control" id="nama" value="" name="nama" placeholder="Masukkan judul "> 
+                </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Keterangan Produk</label>
                   <input type="text" class="form-control" id="nama" value="" name="keterangan" placeholder="Masukkan keterangan "> 

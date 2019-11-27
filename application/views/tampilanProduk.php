@@ -170,7 +170,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="gallery-demo">
 						<a href="#gal<?= $p['id'] ?>">
 							<img src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt=" " class="img-fluid" />
-							<h4 class="p-mask"><?php echo "$p[keterangan]"?></h4>
+							<h4 class="p-mask">Judul : <?php echo "$p[judul]"?></h4>
+							<p>Deskripsi : <?php echo "$p[keterangan]"?> </p>
 						</a>
 					</div>
 					<br/>
@@ -219,7 +220,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div id="gal<?= $p['id'] ?>" class="pop-overlay">
 		<div class="popup">
 			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt="">
-			<h4 class="p-mask"><?php echo "$p[keterangan]"?></h4>
+			<h4 class="p-mask">Judul : <?php echo "$p[judul]"?></h4>
+			<p>Deskripsi : <?php echo "$p[keterangan]"?> </p>
 			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
 				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
 			</a>

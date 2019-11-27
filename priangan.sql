@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 19, 2019 at 10:55 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- Generation Time: Nov 27, 2019 at 08:10 AM
+-- Server version: 10.1.26-MariaDB
+-- PHP Version: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -61,7 +61,9 @@ CREATE TABLE `banner` (
 INSERT INTO `banner` (`id`, `namaBanner`, `fotoBanner`) VALUES
 (2, 'andi iman', 'Capture.PNG'),
 (3, 'aiaa', '12.JPG'),
-(4, 'bababa', '01.jpg');
+(4, 'bababa', '01.jpg'),
+(5, 'Fadhil Rizqullah Saniputra', '171756.jpg'),
+(6, 'mejas', '1.JPG');
 
 -- --------------------------------------------------------
 
@@ -166,6 +168,7 @@ INSERT INTO `paketwisata` (`idWisata`, `foto`, `namaWisata`, `preview`, `tanggal
 
 CREATE TABLE `product` (
   `id` int(20) NOT NULL,
+  `judul` varchar(50) NOT NULL,
   `keterangan` varchar(50) NOT NULL,
   `fotoProduk` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -174,10 +177,11 @@ CREATE TABLE `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `keterangan`, `fotoProduk`) VALUES
-(6, 'ini produk', '02.jpg'),
-(7, 'produk 2', '021.jpg'),
-(8, 'produk 3', '022.jpg');
+INSERT INTO `product` (`id`, `judul`, `keterangan`, `fotoProduk`) VALUES
+(6, '', 'ini produk', '02.jpg'),
+(7, '', 'produk 2', '021.jpg'),
+(8, '', 'produk 3', '022.jpg'),
+(9, '', 'produk', 'afraide.JPG');
 
 -- --------------------------------------------------------
 
@@ -259,7 +263,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `galeri`
@@ -289,7 +293,7 @@ ALTER TABLE `paketwisata`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `test1`
