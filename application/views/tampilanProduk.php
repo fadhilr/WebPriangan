@@ -31,9 +31,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-	<link href="<?php echo base_url();?>/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/docs.theme.min.css">
+	
 	<!-- Font-Awesome-Icons-CSS -->
+    <link href="<?php echo base_url();?>/assets/css/font-awesome.min.css" rel="stylesheet">
 	<!-- //Custom-Files -->
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/owlcarousel/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url();?>/assets/owlcarousel/assets/owl.theme.default.min.css"> -->
+
 
 	<!-- Web-Fonts -->
 	<link
@@ -43,6 +49,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		href="//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
 		rel="stylesheet">
 	<!-- //Web-Fonts -->
+    <!-- javascript -->
+    <script src="<?php echo base_url();?>/assets/vendors/jquery.min.js"></script>
+    <script src="<?php echo base_url();?>/assets/owlcarousel/owl.carousel.js"></script>
 </head>
 
 <body>
@@ -125,6 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="checkbox" id="drop" />
 						<ul class="menu">
                             <li><a href="<?php echo base_url(); ?>c_web/tampilanAbout">About Us</a></li>
+							<li><a href="<?php echo base_url(); ?>c_web/tampilanAllProduk">All Produk</a></li>
 							<li><a href="<?php echo base_url(); ?>c_web/tampilanProduk">Produk</a></li>
 							<li><a href="<?php echo base_url(); ?>c_web/tampilanHow">How to buy</a></li>
 							<li><a href="<?php echo base_url(); ?>c_web/tampilanLokasi">Store Location</a></li>
@@ -163,25 +173,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p class="titile-para-text mx-auto"></p>
 			</div>
 			<div class="row mt-4">
-			<?php 
-				foreach($produk as $p){
-			?>
-				<div class="col-md-4">
-					<div class="gallery-demo">
-						<a href="#gal<?= $p['id'] ?>">
-							<img src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt=" " class="img-fluid" />
-							<h4 class="p-mask">Judul : <?php echo "$p[judul]"?></h4>
-							<p>Deskripsi : <?php echo "$p[keterangan]"?> </p>
-						</a>
-					</div>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-				</div>
-			<?php 
-				}
-			?>
+            <section class="title">
+            
+            </section>
+
+            <!--  Demos -->
+            <section id="demos" style="width: 1000px;">
+            <div class="row" style="width: 2000px;">
+                <div class="large-5 columns" style="width: 1000px;">
+                <div class="owl-carousel owl-theme">
+                <?php 
+                    foreach($produk as $p){
+                ?>
+                    <div class="item">
+                        <a href="#gal<?= $p['id'] ?>">
+                            <img src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt=" " class="img-fluid" width="500px" height="400px" />
+                            
+                        </a>
+                    </div>
+                <?php 
+                    }
+                ?>
+                </div>
+                <a class="button secondary play">Play</a> 
+                <a class="button secondary stop">Stop</a>
+                <script>
+                    $(document).ready(function() {
+                    var owl = $('.owl-carousel');
+                    owl.owlCarousel({
+                        items: 5,
+                        loop: true,
+                        margin: 10,
+                        autoplay: true,
+                        autoplayTimeout: 1000,
+                        autoplayHoverPause: true
+                    });
+                    $('.play').on('click', function() {
+                        owl.trigger('play.owl.autoplay', [2000])
+                    })
+                    $('.stop').on('click', function() {
+                        owl.trigger('stop.owl.autoplay')
+                    })
+                    })
+                </script>
+            </section>
 			</div>
 			<!-- <div class="row mt-md-5">
 				<div class="col-md-4 mt-md-0 mt-4">
@@ -213,87 +248,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</section>
 
 	<!-- gallery model-->
-	<!-- gallery popup 1 -->
-	<?php 
-		foreach($produk as $p){
-	?>
-	<div id="gal<?= $p['id'] ?>" class="pop-overlay">
-		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt="">
-			<h4 class="p-mask">Judul : <?php echo "$p[judul]"?></h4>
-			<p>Deskripsi : <?php echo "$p[keterangan]"?> </p>
-			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
-				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-			</a>
-			<a class="close" href="#gallery">×</a>
-		</div>
-	</div>
-	<?php 
-		}
-	?>
-	<!-- //gallery popup 1 -->
-	<!-- gallery popup 2 -->
-	<div id="gal2" class="pop-overlay">
-		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/blog2.jpg" alt="">
-			<h4 class="p-mask">Veg Muffin - <span>$16</span></h4>
-			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
-				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-			</a>
-			<a class="close" href="#gallery">×</a>
-		</div>
-	</div>
-	<!-- //gallery popup 2 -->
-	<!-- gallery popup 3 -->
-	<div id="gal3" class="pop-overlay">
-		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/blog3.jpg" alt="">
-			<h4 class="p-mask">Brioche - <span>$18</span></h4>
-			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
-				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-			</a>
-			<a class="close" href="#gallery">×</a>
-		</div>
-	</div>
-	<!-- //gallery popup 3 -->
-	<br>
-	<!-- gallery popup 4 -->
-	<div id="gal4" class="pop-overlay">
-		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/g1.jpg" alt="">
-			<h4 class="p-mask">Cheese Burger - <span>$20</span></h4>
-			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
-				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-			</a>
-			<a class="close" href="#gallery">×</a>
-		</div>
-	</div>
-	<!-- //gallery popup 4 -->
-	<br>
-	<!-- gallery popup 5 -->
-	<div id="gal5" class="pop-overlay">
-		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/g2.jpg" alt="">
-			<h4 class="p-mask">Chicken Burger - <span>$22</span></h4>
-			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
-				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-			</a>
-			<a class="close" href="#gallery">×</a>
-		</div>
-	</div>
-	<!-- //gallery popup 5 -->
-	<br>
-	<!-- gallery popup 6 -->
-	<div id="gal6" class="pop-overlay">
-		<div class="popup">
-			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/g3.jpg" alt="">
-			<h4 class="p-mask">Veg Burger - <span>$16</span></h4>
-			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
-				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
-			</a>
-			<a class="close" href="#gallery">×</a>
-		</div>
-	</div>
+	
 	<!-- //gallery popup 6 -->
 	<!-- //menu -->
 

@@ -97,6 +97,10 @@ class C_web extends CI_Controller {
 		$data['produk']=$this->m_web->get_produk();
 		$this->load->view('tampilanProduk',$data);
 	}
+	public function tampilanAllProduk(){
+		$data['produk']=$this->m_web->get_produk();
+		$this->load->view('tampilanAllProduk',$data);
+	}
 	public function tampilanHow(){
 		$this->load->view('tampilanHow');
 	}

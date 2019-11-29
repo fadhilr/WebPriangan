@@ -127,6 +127,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="checkbox" id="drop" />
 						<ul class="menu">
                             <li><a href="<?php echo base_url(); ?>c_web/tampilanAbout">About Us</a></li>
+							<li><a href="<?php echo base_url(); ?>c_web/tampilanAllProduk">All Produk</a></li>
 							<li><a href="<?php echo base_url(); ?>c_web/tampilanProduk">Produk</a></li>
 							<li><a href="<?php echo base_url(); ?>c_web/tampilanHow">How to buy</a></li>
 							<li><a href="<?php echo base_url(); ?>c_web/tampilanLokasi">Store Location</a></li>
