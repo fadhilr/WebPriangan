@@ -31,14 +31,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/docs.theme.min.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/docs.theme.min.css"> -->
 	
 	<!-- Font-Awesome-Icons-CSS -->
     <link href="<?php echo base_url();?>/assets/css/font-awesome.min.css" rel="stylesheet">
 	<!-- //Custom-Files -->
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/owlcarousel/assets/owl.carousel.min.css">
-    <!-- <link rel="stylesheet" href="<?php echo base_url();?>/assets/owlcarousel/assets/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/owlcarousel/assets/owl.theme.default.min.css">
 
 
 	<!-- Web-Fonts -->
@@ -195,8 +195,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     }
                 ?>
                 </div>
-                <a class="button secondary play">Play</a> 
-                <a class="button secondary stop">Stop</a>
+                
                 <script>
                     $(document).ready(function() {
                     var owl = $('.owl-carousel');
@@ -248,7 +247,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</section>
 
 	<!-- gallery model-->
-	
+	<?php 
+		foreach($produk as $p){
+	?>
+	<div id="gal<?= $p['id'] ?>" class="pop-overlay">
+		<div class="popup">
+			<img class="img-fluid" src="<?php echo base_url();?>/assets/images/produk/<?php echo "$p[fotoProduk]"?>" alt="">
+			<h4 class="p-mask">Judul : <?php echo "$p[judul]"?></h4>
+			<p>Deskripsi : <?php echo "$p[keterangan]"?> </p>
+			<a href="https://api.whatsapp.com/send?phone=62821111111&text=Halo%20Priangan%20Sari" class="button-w3ls active mt-3">Order Now
+				<span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
+			</a>
+			<a class="close" href="#gallery">×</a>
+		</div>
+	</div>
+	<?php 
+		}
+	?>
 	<!-- //gallery popup 6 -->
 	<!-- //menu -->
 
