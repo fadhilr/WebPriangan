@@ -180,7 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <!--  Demos -->
             <section id="demos" style="width: 1000px;">
             <div class="row" style="width: 2000px;">
-                <div class="large-5 columns" style="width: 1000px;">
+                <div class="large-6 columns" style="width: 1200px;">
                 <div class="owl-carousel owl-theme">
                 <?php 
                     foreach($produk as $p){
