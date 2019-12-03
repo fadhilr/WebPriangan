@@ -89,7 +89,34 @@ class C_web extends CI_Controller {
 			$data['wisata']=$this->m_web->get_product_keyword($keyword);
 			$data['guide']=$this->m_web->get_product_keyword1($keyword);
 			$this->load->view('tampilanSearch',$data);
-		}
+	}
+	public function requestInfo(){
+		$config['mailtype'] = 'text';
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'smtp.mailtrap.io';
+		$config['smtp_user'] = '30782b551a61e0';
+		$config['smtp_pass'] = '549ba05f863ff8';
+		$config['smtp_port'] = 2525 ;
+		$config['newline'] = "\r\n";
+
+		$this->load->library('email', $config);
+
+		$this->email->from('no-reply@bahasaweb.com', 'Sistem Bahasaweb.com');
+		$this->email->to('fadilrizqullah97@gmail.com');
+		$this->email->subject('Contoh Kirim Email Dengan Codeigniter');
+		$this->email->message('Contoh pesan yang dikirim dengan codeigniter');
+
+		// if($this->email->send()) {
+		// 	echo 'Email berhasil dikirim';
+		// }
+		// else {
+		// 	echo 'Email tidak berhasil dikirim';
+		// 	echo '<br />';
+		// 	echo $this->email->print_debugger();
+		// }
+
+		$this->index();
+	}
 	public function tampilanAbout(){
 		$this->load->view('tampilanAboutUs');
 	}

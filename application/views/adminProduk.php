@@ -224,7 +224,7 @@ if($this->session->userdata('username')==null){
                 <thead>
                 <tr>
                   <th>Nomor </th>
-                  <th>Nama Produk</th>
+                  <th>Judul</th>
                   <th>Foto Produk</th>
                   <th>Keterangan </th>
                   <th>Aksi</th>
@@ -260,7 +260,7 @@ if($this->session->userdata('username')==null){
                 <tfoot>
                 <tr>
                 <th>Nomor </th>
-                <th>Nama Produk</th>
+                <th>Judul</th>
                   <th>Foto Produk</th>
                   <th>Keterangan </th>
                   <th>Aksi</th>
